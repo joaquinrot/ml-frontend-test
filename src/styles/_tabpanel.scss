@@ -1,0 +1,115 @@
+.ml-interaction{
+	padding: 40px 0 40px 20vw; /* solo para mejor presentacion */
+	max-width: 900px;
+	margin: 0 50px 80px 0;
+}
+
+.ml-interaction-tabpanel{
+	position: relative;
+
+	li{
+		&:last-child .ml-interaction-tabpanel__label{
+			left: 183px;
+		}
+	}
+}
+
+.ml-radio-label{
+	&:checked ~ .ml-interaction-tabpanel__label{
+		background-color: #fff;
+		border-top: 1px solid rgba(158,158,158 ,0.5);
+		border-left: 1px solid rgba(158,158,158 ,0.5);
+		border-right: 1px solid rgba(158,158,158 ,0.5);
+		box-shadow: -2px -1px 1px rgba(0,0,0,0.1), 2px 0 1px rgba(0,0,0,0.05);
+		z-index: 3;
+	}
+
+	&:checked ~ .ml-interaction-tabpanel__tab-content{
+		display: block;
+	}
+
+	&:focus ~ .ml-interaction-tabpanel__label{
+		border-top: 2px solid #FDD835;
+		padding: 6.5px 20px;
+	}
+}
+
+.ml-interaction-tabpanel__label{
+	position: absolute;
+	top: 0;
+	color: $primary-font-color;
+	font-weight: bold;
+	font-size: 1.1em;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding: 7px 20px;
+	background-color: #dcdcdc;
+	border-radius: 3px 3px 0 0;
+	z-index: 1;
+}
+
+.ml-interaction-tabpanel__tab-content{
+	position: relative;
+	padding: 20px;
+	top: 34px;
+	border: 1px solid rgba(158,158,158 ,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: #fff;
+	display: none;
+	left: 0;
+	z-index: 2
+}
+
+@media screen and (max-width: 1280px) {
+    .ml-interaction{
+		padding: 0 0 0 8vw; /* solo para mejor presentacion */
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.ml-interaction{
+		padding: 0 0 0 3vw; /* solo para mejor presentacion */
+		margin: 0 10px 80px 0;
+
+		.ml-note{
+			visibility: hidden;
+		}
+	}
+
+	.ml-interaction-tabpanel{
+		position: relative;
+
+		li{
+			margin: 30px 0;
+			&:last-child .ml-interaction-tabpanel__label{
+				left: 0;
+			}
+		}
+
+		li:first-child{
+			margin: 0 0 30px 0;
+		}
+	}
+
+	.ml-radio-label{
+		display: none;
+	}
+
+    .ml-interaction-tabpanel__label{
+    	position: relative;
+    	background-color: #fff;
+		border-top: 1px solid rgba(158,158,158 ,0.5);
+		border-left: 1px solid rgba(158,158,158 ,0.5);
+		border-right: 1px solid rgba(158,158,158 ,0.5);
+		box-shadow: -2px -1px 1px rgba(0,0,0,0.1), 2px 0 1px rgba(0,0,0,0.05);
+		cursor: auto;
+		z-index: 3;
+    }
+
+    .ml-interaction-tabpanel__tab-content{
+    	display: block !important;
+    	padding: 15px;
+    	top: 3px;
+    }
+}

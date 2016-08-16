@@ -1,0 +1,55 @@
+.ml-comment-list{
+	li{
+		padding: 10px 0;
+		border-bottom: 1px solid #ddd; 
+	}
+
+	li:first-child{
+		padding: 0 0 10px 0;
+	}
+
+	li:last-child{
+		border-bottom: 0;
+	}
+}
+
+.ml-comment-list__comment{
+	margin: 10px 0;
+	h3{
+		display: inline-block;
+		font-size: 15px;
+		margin: 2px 5px 2px 0;
+		font-weight: bold;
+	}
+
+	time{
+		display: inline-block;
+		color: $secondary-font-color;
+		font-size: 11px;
+	}
+
+	p{
+		padding: 8px 0 8px 25px;
+	}
+}
+
+.ml-comment-list_comment--question{
+	h3{
+		color: #2196F3;
+	}
+
+	p{
+		background-color: #E3F2FD;
+	}
+}
+
+.ml-comment-list_comment--reply{
+
+	h3{
+		color: #4CAF50;
+	}
+
+	p{
+		background-color: #E8F5E9;
+	}
+}

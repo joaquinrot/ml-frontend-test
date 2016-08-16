@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $primary-font-color;
+}
+
+.ml-hidden{
+	position: absolute;
+	opacity: 0;
+}
+
+.ml-note{
+	padding: 10px 0;
+	
+	&.ml-note--small{
+		font-size: 0.8em;
+	}
+
+	&.ml-note--medium{
+		font-size: 1.1em;
+	}
+
+	&.ml-note--big{
+		font-size: 1.7em;
+	}
+
+}
+
+.ml-more-content{
+	padding: 50px;
+}
