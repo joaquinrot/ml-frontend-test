@@ -93,8 +93,8 @@ body {
 }
 
 .ml-product__info-carousel {
-  width: 430px;
-  padding: 25px 0 0;
+  max-width: 430px;
+  padding: 60px 0 0;
 }
 
 .ml-product__info-carousel h1 {
@@ -136,7 +136,8 @@ body {
     /* solo para mejor presentacion */
   }
   .ml-product__info-carousel {
-    width: 310px;
+    padding: 15px 0 0;
+    max-width: 310px;
   }
 }
 

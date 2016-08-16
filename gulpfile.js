@@ -12,11 +12,11 @@ var concat          = require('gulp-concat');
 var cssnano         = require('gulp-cssnano');
 var ghPages         = require('gulp-gh-pages');
 
-gulp.task('browserSync', ['css', 'js', 'html'], function() {
+gulp.task('browserSync', ['build'], function() {
     browserSync.init({
         port: 3000,
         server: {
-            baseDir: './'
+            baseDir: './dist'
         }
     })
 });
