@@ -124,7 +124,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .ml-product__info-payment {
     padding: 0;
   }
@@ -251,12 +251,8 @@ body {
 
 /*import comments styles*/
 .ml-comment-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.ml-comment-list li:first-child {
   padding: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .ml-comment-list li:last-child {
