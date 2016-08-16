@@ -93,6 +93,7 @@ body {
 }
 
 .ml-product__info-carousel {
+  max-width: 430px;
   padding: 60px 0 0;
 }
 
@@ -136,7 +137,7 @@ body {
   }
   .ml-product__info-carousel {
     padding: 15px 0 0;
-    width: 310px;
+    max-width: 310px;
   }
 }
 
