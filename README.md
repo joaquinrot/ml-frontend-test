@@ -1,6 +1,6 @@
 # ML frontend test
 
-Exámen práctico Frontend Developer MercadoLibre.
+Examen práctico Frontend Developer MercadoLibre.
 
 ## Aclaraciones importantes
 
