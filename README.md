@@ -14,8 +14,7 @@ por lo tanto no seguí ese camino.
 - **Diseño:** El diseño lo mantuve tal como en el boceto, agregué solo unos pocos elementos
 de diseño propios porque no estaba seguro si se podía o no.
 
-- **Tabs:** Al tener que ser el panel de tabs sólo en css se hace un poco frustrante la navegación
-en términos de accesibilidad, he buscado la mejor alternativa para que pueda manejarse con teclado y usando ARIA para usuarios no videntes.
+- **Tabs:** Al tener que ser el panel de tabs sólo en css se hace un poco frustrante la navegación, he buscado la mejor alternativa para que pueda manejarse con teclado y usando ARIA para usuarios no videntes.
 
 ## Development process
 
