@@ -5,16 +5,12 @@ Examen práctico Frontend Developer MercadoLibre.
 ## Aclaraciones importantes
 
 - **Layout:** He seguido el layout tal como en el boceto, centré con un `padding` a la
-izquierda solo por propositos de presentación, ya que quiero mantener el layout fluido,
-pero no es para nada una buena técnica, lo se. Una mejor alternativa es
-poner `text-align: center;` en el contenedor padre y centrar todo automaticamente, esto causa
-que el titulo del producto esté centrado y en el boceto se lo requería alineado a la izquierda,
-por lo tanto no seguí ese camino.
+izquierda solo por propositos de **presentación**, ya que el alineado depende de donde se lo use.
 
 - **Diseño:** El diseño lo mantuve tal como en el boceto, agregué solo unos pocos elementos
-de diseño propios porque no estaba seguro si se podía o no.
+de diseño propios porque no quedaba claro si se podía o no.
 
-- **Tabs:** Al tener que ser el panel de tabs sólo en css, la navegación por las mismas no es quizás como usualmente se hace, de todas formas he hecho que la interacción con teclado sea relativamente fácil y usando ARIA roles y properties para hacer posible su uso por usuarios no videntes.
+- **Tabs:** A pesar de ser solo en css, he hecho que la interacción con teclado sea relativamente fácil, además de accesible a usuarios no videntes.
 
 ## Development process
 
