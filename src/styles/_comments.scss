@@ -1,51 +1,52 @@
-.ml-comment-list{
-	li{
-		padding: 0 0 10px 0;
-		border-bottom: 1px solid #ddd; 
-	}
+.ml-comment-list {
+  li {
+    border-bottom: 1px solid $grey;
+    padding: 0 0 10px;
+  }
 
-	li:last-child{
-		border-bottom: 0;
-	}
-}
+  li:last-child {
+    border-bottom: 0;
+  }
 
-.ml-comment-list__comment{
-	margin: 10px 0;
-	h3{
-		display: inline-block;
-		font-size: 15px;
-		margin: 2px 5px 2px 0;
-		font-weight: bold;
-	}
+  &__comment {
+    margin: 10px 0;
 
-	time{
-		display: inline-block;
-		color: $secondary-font-color;
-		font-size: 11px;
-	}
+    h3 {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 2px 5px 2px 0;
+    }
 
-	p{
-		padding: 8px 0 8px 25px;
-	}
-}
+    time {
+      color: $secondary-font-color;
+      display: inline-block;
+      font-size: 11px;
+    }
 
-.ml-comment-list_comment--question{
-	h3{
-		color: #2196F3;
-	}
+    p {
+      padding: 8px 0 8px 25px;
+    }
+  }
 
-	p{
-		background-color: #E3F2FD;
-	}
-}
+  &_comment--question {
+    h3 {
+      color: #2196F3;
+    }
 
-.ml-comment-list_comment--reply{
+    p {
+      background-color: #E3F2FD;
+    }
+  }
 
-	h3{
-		color: #4CAF50;
-	}
+  &_comment--reply {
 
-	p{
-		background-color: #E8F5E9;
-	}
+    h3 {
+      color: #4CAF50;
+    }
+
+    p {
+      background-color: #E8F5E9;
+    }
+  }
 }

@@ -3,13 +3,13 @@ function qS(selector) { return document.querySelector(selector); };
 window.addEventListener('load', function(e) {
 
 if(window.innerWidth > 500){
-	var zoom = new ch.Zoom(qS('#zoom-default'), {
-	  'offsetX': 0,
-	  'offsetY': 0
-	});
+  var zoom = new ch.Zoom(qS('#zoom-default'), {
+    'offsetX': 0,
+    'offsetY': 0
+  });
 
-	zoom.container.style.height = '500px';
-	zoom.container.style.width = '400px';
+  zoom.container.style.height = '500px';
+  zoom.container.style.width = '400px';
 }
 
 var carousel = new ch.Carousel(qS('#carousel'), {

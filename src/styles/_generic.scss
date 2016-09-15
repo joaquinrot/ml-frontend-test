@@ -1,37 +1,37 @@
-body{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: $primary-font-color;
+body {
+  box-sizing: border-box;
+  color: $primary-font-color;
+  margin: 0;
+  padding: 0;
 }
 
-.ml-hidden{
-	position: absolute;
-	opacity: 0;
+.ml-hidden {
+  opacity: 0;
+  position: absolute;
 }
 
-.ml-note{
-	padding: 10px 0;
-	
-	&.ml-note--small{
-		font-size: 0.8em;
-	}
+.ml-note {
+  padding: 10px 0;
 
-	&.ml-note--medium{
-		font-size: 1.1em;
-	}
+  &.ml-note--small {
+    font-size: .8em;
+  }
 
-	&.ml-note--big{
-		font-size: 1.7em;
-	}
+  &.ml-note--medium {
+    font-size: 1.1em;
+  }
+
+  &.ml-note--big {
+    font-size: 1.7em;
+  }
 
 }
 
-.ml-container{
-	display: block;
-	position: relative;
+.ml-container {
+  display: block;
+  position: relative;
 }
 
-.ml-more-content{
-	padding: 50px;
+.ml-more-content {
+  padding: 50px;
 }

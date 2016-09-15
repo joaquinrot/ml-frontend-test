@@ -1,104 +1,99 @@
-.ml-product{
-	background-color: #ececec;
-	padding: 40px 0 40px 20vw; /* solo para mejor presentacion */
-	h1{
-		padding-bottom: 20px;
-		line-height: 1;
-		font-size: 3.3em;
-	}
-}
+.ml-product {
+  background-color: #ececec;
+  padding: 40px 0 40px 20vw; //solo para mejor presentacion
 
-.ml-product__info{
-	position: relative;
-}
+  h1 {
+    font-size: 3.3em;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
 
-.ml-product__info-image{
-	display: inline-block;
-	position: relative;
-	width: 96%;
-	border: 1px solid #ddd;
-	max-width: 450px;
-	min-height: 500px;
-	background-color: white;
-	overflow: hidden;
+  @media screen and (max-width: $responsive-breakpoint-large) {
+    padding: 40px 0 40px 8vw; //solo para mejor presentacion
+  }
 
-	a{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
+  @media screen and (max-width: $responsive-breakpoint-small) {
+    padding: 40px 0 40px 3vw; //solo para mejor presentacion
+  }
 
-.ml-product__info-payment{
-	display: inline-block;
-	text-align: left;
-	vertical-align: top;
-	padding: 0 0 0 50px;
+  &__info {
+    position: relative;
+  }
 
-	fieldset:first-child{
-		padding: 0;
-	}
+  &__info-image {
+    background-color: $white;
+    border: 1px solid $grey;
+    display: inline-block;
+    max-width: 450px;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 96%;
 
-	label{
-		font-weight: bold;
-		font-size: 1.1em;
-		text-align: left;
-		max-width: 70px;
-	}
-
-	select{
-		padding: 3px;
-		border-radius: 3px;
-	}
-}
-
-.ml-product__info-carousel{
-	max-width: 430px;
-	padding: 60px 0 0;
-	h1{
-		font-size: 20px;
-		margin: 0;
-		padding-bottom: 10px;
-	}
-}
-
-.ml-carousel{
-	.ml-carousel__item-title{
-		font-size: 13px;
-		margin: 5px 0 0;
-	}
-}
-
-.ml-price{
-	font-size: 3.2em;
-	padding: 20px 0 35px 0 ;
-}
-
-.buy-btn{
-	margin-top: 10px;
-}
-
-@media screen and (max-width: 1280px) {
-    .ml-product{
-		padding: 40px 0 40px 8vw; /* solo para mejor presentacion */
-	}
-}
-
-@media screen and (max-width: 950px) {
-    .ml-product__info-payment{
-    	padding: 0;
+    a {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
+
+  &__info-payment {
+    display: inline-block;
+    padding: 0 0 0 50px;
+    text-align: left;
+    vertical-align: top;
+
+    fieldset:first-child {
+      padding: 0;
+    }
+
+    label {
+      font-size: 1.1em;
+      font-weight: bold;
+      max-width: 70px;
+      text-align: left;
+    }
+
+    select {
+      border-radius: 3px;
+      padding: 3px;
+    }
+
+    @media screen and (max-width: $responsive-breakpoint-medium) {
+      padding: 0;
+    }
+  }
+
+  &__info-carousel {
+    max-width: 430px;
+    padding: 60px 0 0;
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (max-width: $responsive-breakpoint-small) {
+      max-width: 310px;
+      padding: 15px 0 0;
+    }
+  }
 }
 
-@media screen and (max-width: 480px) {
+.ml-carousel {
+  &__item-title {
+    font-size: 13px;
+    margin: 5px 0 0;
+  }
+}
 
-	.ml-product{
-		padding: 40px 0 40px 3vw; /* solo para mejor presentacion */
-	}
+.ml-price {
+  font-size: 3.2em;
+  padding: 20px 0 35px;
+}
 
-    .ml-product__info-carousel{
-    	padding: 15px 0 0;
-    	max-width: 310px;
-    }
+.buy-btn {
+  margin-top: 10px;
 }

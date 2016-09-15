@@ -7,6 +7,7 @@ var postcss         = require('gulp-postcss');
 var uglify          = require('gulp-uglify');
 var htmlmin         = require('gulp-htmlmin');
 var browserSync     = require('browser-sync').create();
+var scsslint        = require('gulp-scss-lint');
 var autoprefixer    = require('autoprefixer');
 var concat          = require('gulp-concat');
 var cssnano         = require('gulp-cssnano');
@@ -19,6 +20,11 @@ gulp.task('browserSync', ['build'], function() {
             baseDir: './dist'
         }
     })
+});
+
+gulp.task('scss-lint', function() {
+  return gulp.src('./src/styles/*.scss')
+  .pipe(scsslint());
 });
 
 gulp.task('sass', function () {
@@ -45,6 +51,7 @@ gulp.task('concatCSS', function () {
 
 gulp.task('css', function (done) {
     runSequence(
+        'scss-lint',
         'sass',
         'minifyCSS',
         'concatCSS'
